@@ -1,3 +1,7 @@
+:root {
+    --bg-orange: #FF9E00;
+}
+
 html {
     font-size: 16px;
     position: relative;
@@ -10,4 +14,29 @@ body {
 
 .form-floating {
     margin-bottom: 12px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus-within,
+.btn-primary:active,
+.nav-pills .nav-link.active {
+    background: var(--bg-orange);
+    border-color: var(--bg-orange);
+    color: #222
+}
+
+.nav-pills .nav-link {
+    color: #222;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-link {
+    --bg-orange: #DB8800;
+}
+
+.btn-link {
+    color: var(--bg-orange);
+    text-decoration: none;
 }
