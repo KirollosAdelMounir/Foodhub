@@ -1,13 +1,13 @@
-﻿using FoodHub.Models;
+﻿using FoodHub.Areas.Identity.Data;
+using FoodHub.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodHub.Controllers
 {
     public class MenuController : Controller
     {
-        public IActionResult Index()
-        {
-            List<FoodItem> items = new List<FoodItem>
+        List<FoodItem> items = new List<FoodItem>
             {
                 new FoodItem
                 {
@@ -38,7 +38,11 @@ namespace FoodHub.Controllers
                     RestaurantId = 1
                 }
             };
-            return View(items);
+        public IActionResult Index() => View(items);
+        public IActionResult Details(int id)
+        {
+            var item = items.Find(x => x.FoodItemId == id);
+            return View(item);
         }
     }
 }

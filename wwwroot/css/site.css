@@ -32,11 +32,13 @@ body {
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-link {
+.btn-link,
+.btn-link:hover {
     --bg-orange: #DB8800;
 }
 
-.btn-link {
-    color: var(--bg-orange);
-    text-decoration: none;
-}
+    .btn-link,
+    .btn-link:hover {
+        color: var(--bg-orange);
+        text-decoration: none;
+    }

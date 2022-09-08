@@ -1,0 +1,41 @@
+﻿@model FoodHub.Models.FoodItem
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+<hr style="height: 0.9px" />
+
+<dl class="row">
+    <dt class="col-sm-3">
+        @Html.DisplayNameFor(model => model.FoodItemId)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.FoodItemId)
+    </dd>
+    <dt class="col-sm-3">
+        @Html.DisplayNameFor(model => model.FoodItemName)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.FoodItemName)
+    </dd>
+    <dt class="col-sm-3">
+        @Html.DisplayNameFor(model => model.Price)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.Price)
+    </dd>
+    <dt class="col-sm-3">
+        @Html.DisplayNameFor(model => model.RestaurantId)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.RestaurantId)
+    </dd>
+</dl>
+<div>
+    <button class="btn btn-primary d-block mb-1 px-5">Add to cart</button>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <a asp-action="Index" class="btn-link">Back to Menu</a>
+</div>
