@@ -1,0 +1,13 @@
+html {
+    font-size: 16px;
+    position: relative;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.form-floating {
+    margin-bottom: 12px;
+}
