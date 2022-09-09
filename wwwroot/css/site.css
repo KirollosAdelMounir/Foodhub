@@ -20,7 +20,8 @@ body {
 .btn-primary:hover,
 .btn-primary:focus-within,
 .btn-primary:active,
-.nav-pills .nav-link.active {
+.nav-pills .nav-link.active,
+.form-check-input:checked {
     background: var(--bg-orange);
     border-color: var(--bg-orange);
     color: #222

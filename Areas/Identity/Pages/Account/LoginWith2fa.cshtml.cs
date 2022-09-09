@@ -97,6 +97,32 @@ namespace FoodHub.Areas.Identity.Pages.Account
                 return Page();
             }
 
+            /**/
+
+            //bool roleResult = await (_roleManager.RoleExistsAsync("Customer"));
+
+            //if (!roleResult)
+            //{
+            //    IdentityRole identityRole = new IdentityRole();
+            //    identityRole.Name = "Customer";
+            //    await _roleManager.CreateAsync(identityRole);
+            //}
+
+            //else
+            //{
+            //    var user = CreateUser();
+
+            //    user.UserName = "Admin";
+            //    user.Email = Input.Email;
+            //    user.Password = Input.Password;
+            //}
+
+            //await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+            //await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+            //var result = await _userManager.CreateAsync(user, Input.Password);
+
+            /***/
+
             returnUrl = returnUrl ?? Url.Content("~/");
 
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();

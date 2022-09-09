@@ -1,4 +1,10 @@
-﻿<header>
+﻿@using Microsoft.AspNetCore.Identity
+@using FoodHub.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<header>
     <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-white border-bottom shadow">
         <div class="container-lg">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FoodHub</a>
@@ -7,17 +13,23 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" /></svg>
             </button>
             <div class="navbar-collapse collapse d-md-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Index">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Orders">Orders</a>
-                    </li>
-                </ul>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Index">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Orders">Orders</a>
+                        </li>
+                    </ul>
+                }
+                else {
+                    <div></div>
+                }
                 <partial name="_LoginPartial" />
             </div>
         </div>
