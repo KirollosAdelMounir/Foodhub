@@ -11,7 +11,7 @@ build_property.RootNamespace = FoodHub
 build_property.ProjectDir = C:\Users\Ahmed Medo\source\repos\FoodHub-Web-App\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Ahmed Medo\source\repos\FoodHub-Web-App
 build_property._RazorSourceGeneratorDebug = 
 
@@ -183,8 +183,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ahmed Medo/source/repos/FoodHub-Web-App/Views/Menu/FoodItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxGb29kSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ahmed Medo/source/repos/FoodHub-Web-App/Views/Menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmed Medo/source/repos/FoodHub-Web-App/Views/Order/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahmed Medo/source/repos/FoodHub-Web-App/Views/Shared/Error.cshtml]

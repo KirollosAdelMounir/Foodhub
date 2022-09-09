@@ -7,7 +7,7 @@ namespace FoodHub.Controllers
 {
     public class MenuController : Controller
     {
-        List<FoodItem> items = new List<FoodItem>
+        public static List<FoodItem> items = new List<FoodItem>
             {
                 new FoodItem
                 {
@@ -38,8 +38,10 @@ namespace FoodHub.Controllers
                     RestaurantId = 1
                 }
             };
-        public IActionResult Index() => View(items);
-        public IActionResult Details(int id)
+        public ActionResult Index() => View(items);
+
+        [HttpGet]
+        public ActionResult Details(int id)
         {
             var item = items.Find(x => x.FoodItemId == id);
             return View(item);

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FoodHub.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodHub.Controllers
@@ -6,42 +6,53 @@ namespace FoodHub.Controllers
     public class OrderController : Controller
     {
         // GET: OrderController
-        public ActionResult Index()
+        public static List<Order> orders = new() { new Order { customerId = 1, foodItemId = 1, OrderDate = new DateTime(2022, 9, 9, 12, 0, 0), Quantity = 1 } };
+        public static List<Customer> customers = new() { new Customer { ID = 1, Name = "Gamal", IsVisible = true } };
+
+        public ActionResult Cart()
         {
-            return View();
+            var validorders = orders.Where(order => order.Quantity > 0).ToList();
+            validorders.ForEach(item => item.foodItem = MenuController.items.FirstOrDefault(food => food.FoodItemId == item.foodItemId));
+            return View(validorders);
         }
 
         // GET: OrderController/Details/5
-        public ActionResult Details(int id)
+        [HttpGet]
+        public ActionResult AddNewItem(int id)
         {
-            return View();
+            if (orders.SingleOrDefault(ord => ord.foodItemId == id) != null)
+            {
+                orders.ForEach(ord => { if (ord.foodItemId == id) ord.Quantity++; });
+                return RedirectToAction("Cart");
+            }
+            Order order = new() { customerId = 1, foodItemId = id, Quantity = 1, OrderDate = new DateTime().Date };
+            orders.Add(order);
+
+            return RedirectToAction("Cart");
         }
 
         // GET: OrderController/Create
-        public ActionResult Create()
+        [HttpPost]
+        public ActionResult AddItem(int id)
         {
-            return View();
+            orders.ForEach(ord => { if (ord.foodItemId == id) ord.Quantity++; });
+            var validorders = orders.Where(order => order.Quantity > 0).ToList();
+            return Json(validorders);
         }
 
         // POST: OrderController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult RemoveItem(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            orders.ForEach(ord => { if (ord.foodItemId == id) ord.Quantity--; });
+            var validorders = orders.Where(order => order.Quantity > 0).ToList();
+            return Json(validorders);
         }
 
         // GET: OrderController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return RedirectToAction("Cart");
         }
 
         // POST: OrderController/Edit/5
