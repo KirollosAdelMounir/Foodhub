@@ -1,4 +1,4 @@
-﻿@model FoodHub.Models.FoodItem
+﻿@model FoodHub.ViewModels.FoodItemCreateViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -14,19 +14,19 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FoodItemName" class="control-label"></label>
-                <input asp-for="FoodItemName" class="form-control" />
-                <span asp-validation-for="FoodItemName" class="text-danger"></span>
+                <label asp-for="foodItem.FoodItemName" class="control-label"></label>
+                <input asp-for="foodItem.FoodItemName" class="form-control" />
+                <span asp-validation-for="foodItem.FoodItemName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
+                <label asp-for="foodItem.Price" class="control-label"></label>
+                <input asp-for="foodItem.Price" class="form-control" />
+                <span asp-validation-for="foodItem.Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RestaurantId" class="control-label"></label>
-                <select asp-for="RestaurantId" class ="form-control" asp-items="ViewBag.RestaurantId">
-                    <option value="2">2</option>
+                <label asp-for="foodItem.Restaurant.RestaurantName" class="control-label"></label>
+                <select asp-for="foodItem.RestaurantId" class ="form-control" asp-items="@(new SelectList(Model.restaurants, "RestaurantId", "RestaurantName"))" required>
+                    <option value="" disabled>Choose Restaurant</option>
                 </select>
             </div>
             <div class="form-group">

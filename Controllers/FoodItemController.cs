@@ -2,20 +2,33 @@
 using FoodHub.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using FoodHub.ViewModels;
 
 namespace FoodHub.Controllers
 {
     public class FoodItemController : Controller
     {
-        private readonly IRepositoryBase<FoodItem, long> _repository;
-        public FoodItemController(IRepositoryBase<FoodItem, long> repository) => _repository = repository;
+        private readonly IRepositoryBase<FoodItem, long> _foodItemRepository;
+        private readonly IRepositoryBase<Restaurant, long> _restaurantRepository;
+        public FoodItemController(IRepositoryBase<FoodItem, long> foodItemRepository, IRepositoryBase<Restaurant, long> restaurantRepository)
+        {
+            _foodItemRepository = foodItemRepository;
+            _restaurantRepository = restaurantRepository;
+        }
         // GET: FoodItemController
-        public ActionResult Index() => View(_repository.List());
+        public ActionResult Index()
+        {
+            return View(_foodItemRepository.Find(x => x.RestaurantId > 0, false, x => x.Restaurant));
+        }
 
         // GET: FoodItemController/Create
         public ActionResult Create()
         {
-            return View();
+            FoodItemCreateViewModel foodItemCreateViewModel = new FoodItemCreateViewModel()
+            {
+                restaurants = _restaurantRepository.List().ToList()
+            };
+            return View(foodItemCreateViewModel);
         }
 
         // POST: FoodItemController/Create
@@ -25,7 +38,7 @@ namespace FoodHub.Controllers
         {
             try
             {
-                _repository.Create(foodItem);
+                _foodItemRepository.Create(foodItem);
                 return RedirectToAction("Index");
             }
             catch
@@ -37,7 +50,7 @@ namespace FoodHub.Controllers
         // GET: FoodItemController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View(_repository.GetById(id));
+            return View(_foodItemRepository.GetById(id));
         }
 
         // POST: FoodItemController/Edit/5
@@ -47,7 +60,7 @@ namespace FoodHub.Controllers
         {
             try
             {
-                _repository.Update(foodItem);
+                _foodItemRepository.Update(foodItem);
                 return RedirectToAction("Index");
             }
             catch
@@ -59,7 +72,7 @@ namespace FoodHub.Controllers
         // GET: FoodItemController/Delete/5
         public ActionResult Delete(int id)
         {
-            var foodItem = _repository.GetById(id);
+            var foodItem = _foodItemRepository.GetById(id);
             return View(foodItem);
         }
 
@@ -70,7 +83,7 @@ namespace FoodHub.Controllers
         {
             try
             {
-                _repository.Delete(foodItem);
+                _foodItemRepository.Delete(foodItem);
                 return RedirectToAction("Index");
             }
             catch

@@ -1,5 +1,6 @@
 ﻿using FoodHub.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace FoodHub.Repository
 {
@@ -14,6 +15,17 @@ namespace FoodHub.Repository
         }
 
         public IEnumerable<T> List() => _entity.ToList();
+
+        public IQueryable<T> Find(Expression<Func<T, bool>> predicate, bool includeSoftDeleted = false, params Expression<Func<T, object>>[] includes)
+        {
+            var items = _entity.AsNoTracking().AsQueryable<T>();
+
+            if (includes != null)
+            {
+                foreach (var include in includes) items = items.Include(include);
+            }
+            return includeSoftDeleted ? items.IgnoreQueryFilters().Where(predicate) : items.Where(predicate);
+        }
 
         public T GetById(K id)
         {
