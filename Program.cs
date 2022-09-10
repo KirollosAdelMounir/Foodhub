@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FoodHub.Areas.Identity.Data;
+using FoodHub.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
 
@@ -17,6 +19,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages();
 
+// Add repository scope.
+builder.Services.AddScoped<DbContext, ApplicationDbContext>();
+builder.Services.AddScoped(typeof(IRepositoryBase<,>), typeof(RepositoryBase<,>));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -31,7 +37,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
+app.UseAuthentication(); ;
 
 app.UseAuthorization();
 

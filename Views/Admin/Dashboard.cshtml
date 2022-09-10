@@ -1,5 +1,34 @@
-﻿@{
+﻿@model FoodHub.ViewModels.DashboardViewModel;
+
+@{
     ViewData["Title"] = "Dashboard Page";
 }
 
+<style>
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: 100px;
+        grid-gap: 16px;
+    }
+
+    .col {
+        width: unset;
+    }
+</style>
+
 <h2>@ViewData["Title"]</h2>
+
+<div class="row w-100 mt-3 mx-0">
+    <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="Orders" asp-action="Index">
+        <h3>Orders (@Model.orders.Count())</h3>
+    </a>
+
+    <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="Restaurant" asp-action="Index">
+        <h3>Restaurants (@Model.restaurants.Count())</h3>
+    </a>
+
+    <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="FoodItem" asp-action="Index">
+        <h3>Food Items (@Model.foodItems.Count())</h3>
+    </a>
+</div>

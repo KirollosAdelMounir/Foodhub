@@ -32,10 +32,18 @@
                     </div>
                 </div>
                 <div>
+                    <div class="checkbox">
+                        <label asp-for="Input.IsAdmin" class="form-label">
+                            <input class="form-check-input" asp-for="Input.IsAdmin" />
+                            @Html.DisplayNameFor(m => m.Input.IsAdmin)
+                        </label>
+                    </div>
+                </div>
+                <div>
                     <button id="login-submit" type="submit" class="w-100 btn btn-primary">Log in</button>
                 </div>
                 <div>
-                    <p>
+                    <p class="mt-2">
                         <a class="btn-link" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
                     </p>
                     <p>
@@ -43,9 +51,6 @@
                     </p>
                     <p>
                         <a class="btn-link" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
-                    <p>
-                        <a class="btn-link" id="login-as-admin" asp-page="./LoginAsAdmin">Login as admin</a>
                     </p>
                 </div>
             </form>

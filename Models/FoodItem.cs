@@ -1,10 +1,19 @@
-﻿namespace FoodHub.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FoodHub.Models
 {
     public class FoodItem
     {
-        public int FoodItemId { get; set; }
-        public string? FoodItemName { get; set; }
+        [Key]
+        public long FoodItemId { get; set; }
+        [Required]
+        [Display(Name = "Item Name")]
+        public string FoodItemName { get; set; }
+        [Required]
         public float Price { get; set; }
-        public int RestaurantId { get; set; }
+        public virtual Restaurant Restaurant { get; set; }
+        [ForeignKey("Restaurant")]
+        public long RestaurantId { get; set; }
     }
 }

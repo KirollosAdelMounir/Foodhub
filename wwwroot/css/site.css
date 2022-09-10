@@ -2,6 +2,12 @@
     --bg-orange: #FF9E00;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+}
+
 html {
     font-size: 16px;
     position: relative;
@@ -12,7 +18,8 @@ body {
     font-family: 'Albert Sans', sans-serif;
 }
 
-.form-floating {
+.form-floating, 
+.form-control {
     margin-bottom: 12px;
 }
 

@@ -1,82 +1,39 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FoodHub.Repository;
+using FoodHub.Models;
+using FoodHub.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodHub.Controllers
 {
     public class AdminController : Controller
     {
+        private readonly IRepositoryBase<Order, long> _orderRepository;
+        private readonly IRepositoryBase<FoodItem, long> _foodItemRepository;
+        private readonly IRepositoryBase<Restaurant, long> _restaurantRepository;
+        public AdminController(
+            IRepositoryBase<Order, long> orderRepository, IRepositoryBase<FoodItem, long> foodItemRepository, IRepositoryBase<Restaurant, long> restaurantRepository
+            )
+        {
+            _orderRepository = orderRepository;
+            _foodItemRepository = foodItemRepository;
+            _restaurantRepository = restaurantRepository;
+        }
         // GET: AdminController
         public ActionResult Index() => RedirectToAction("Dashboard");
-
-        public ActionResult Dashboard() => View();
-
-        // GET: AdminController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Dashboard()
         {
-            return View();
-        }
-
-        // GET: AdminController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: AdminController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+            IEnumerable<Order> _orders = _orderRepository.List();
+            IEnumerable<FoodItem> _foodItems = _foodItemRepository.List();
+            IEnumerable<Restaurant> _restaurants = _restaurantRepository.List();
+            DashboardViewModel dashboardViewModel = new DashboardViewModel
             {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                orders = _orders,
+                restaurants = _restaurants,
+                foodItems = _foodItems
+            };
+            return View(dashboardViewModel);
         }
 
-        // GET: AdminController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: AdminController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: AdminController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: AdminController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

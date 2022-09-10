@@ -112,6 +112,15 @@ namespace FoodHub.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            
+            [Required]
+            [Display(Name = "Area")]
+            [MinLength(10, ErrorMessage = "The area should be at least 10 characters")]
+            public string Area { get; set; }
+
+            [Required]
+            [Display(Name = "Admin user?")]
+            public bool IsAdmin { get; set; }
         }
 
 
@@ -128,12 +137,20 @@ namespace FoodHub.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                bool roleResult = await (_roleManager.RoleExistsAsync("Customer"));
+                bool roleResult;
+                if (Input.IsAdmin)
+                {
+                    ReturnUrl = Url.Content("~/Admin");
+                    roleResult = await (_roleManager.RoleExistsAsync("Admin"));
+                }
+                else
+                    roleResult = await (_roleManager.RoleExistsAsync("Customer"));
 
+                //If customer role doesn't exist, create one based on input model
                 if (!roleResult)
                 {
                     IdentityRole identityRole = new IdentityRole();
-                    identityRole.Name = "Customer";
+                    identityRole.Name = Input.IsAdmin ? "Admin" : "Customer";
                     await _roleManager.CreateAsync(identityRole);
                 }
 
@@ -141,14 +158,16 @@ namespace FoodHub.Areas.Identity.Pages.Account
 
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
+                user.Area = Input.IsAdmin ? "Admin" : Input.Area;
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
+                // If user is created, assign the new role
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, "Customer");
+                    await _userManager.AddToRoleAsync(user, Input.IsAdmin ? "Admin" : "Customer");
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);
@@ -171,7 +190,7 @@ namespace FoodHub.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        return LocalRedirect(returnUrl = "~/");
                     }
                 }
                 foreach (var error in result.Errors)
