@@ -10037,19 +10037,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nour\\.nuget\\packages\\": {}
+    "C:\\Users\\kokoe\\.nuget\\packages\\": {},
+    "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_.NET\\FoodHub\\FoodHub.csproj",
+      "projectUniqueName": "G:\\ITI training\\ITI project\\FoodHub.csproj",
       "projectName": "FoodHub",
-      "projectPath": "D:\\_.NET\\FoodHub\\FoodHub.csproj",
-      "packagesPath": "C:\\Users\\Nour\\.nuget\\packages\\",
-      "outputPath": "D:\\_.NET\\FoodHub\\obj\\",
+      "projectPath": "G:\\ITI training\\ITI project\\FoodHub.csproj",
+      "packagesPath": "C:\\Users\\kokoe\\.nuget\\packages\\",
+      "outputPath": "G:\\ITI training\\ITI project\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nour\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kokoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
