@@ -8,253 +8,253 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FoodHub
 build_property.RootNamespace = FoodHub
-build_property.ProjectDir = C:\Users\Ahmed Medo\Source\Repos\nourbeh302\FoodHub-Web-App\
+build_property.ProjectDir = G:\ITI Project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Ahmed Medo\Source\Repos\nourbeh302\FoodHub-Web-App
+build_property.MSBuildProjectDirectory = G:\ITI Project
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Lockout.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Login.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Logout.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/Register.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/_ViewImports.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/_ViewStart.cshtml]
+[G:/ITI Project/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Admin/Dashboard.cshtml]
+[G:/ITI Project/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/FoodItem/Create.cshtml]
+[G:/ITI Project/Views/FoodItem/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEl0ZW1cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/FoodItem/Delete.cshtml]
+[G:/ITI Project/Views/FoodItem/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEl0ZW1cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/FoodItem/Edit.cshtml]
+[G:/ITI Project/Views/FoodItem/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEl0ZW1cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/FoodItem/Index.cshtml]
+[G:/ITI Project/Views/FoodItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEl0ZW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Home/Index.cshtml]
+[G:/ITI Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Home/Privacy.cshtml]
+[G:/ITI Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Menu/Details.cshtml]
+[G:/ITI Project/Views/Menu/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Menu/FoodItem.cshtml]
+[G:/ITI Project/Views/Menu/FoodItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxGb29kSXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Menu/Index.cshtml]
+[G:/ITI Project/Views/Menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Order/Cart.cshtml]
+[G:/ITI Project/Views/Order/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Restaurant/Create.cshtml]
+[G:/ITI Project/Views/Restaurant/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Restaurant/Delete.cshtml]
+[G:/ITI Project/Views/Restaurant/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Restaurant/Edit.cshtml]
+[G:/ITI Project/Views/Restaurant/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Restaurant/Index.cshtml]
+[G:/ITI Project/Views/Restaurant/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Shared/Error.cshtml]
+[G:/ITI Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Shared/_LoginPartial.cshtml]
+[G:/ITI Project/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Shared/_Navbar.cshtml]
+[G:/ITI Project/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Shared/_ValidationScriptsPartial.cshtml]
+[G:/ITI Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/_ViewImports.cshtml]
+[G:/ITI Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/_ViewStart.cshtml]
+[G:/ITI Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Views/Shared/_Layout.cshtml]
+[G:/ITI Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x4vjnphkoe

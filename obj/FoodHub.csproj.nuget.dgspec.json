@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {}
+    "G:\\ITI Project\\FoodHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {
+    "G:\\ITI Project\\FoodHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
+        "projectUniqueName": "G:\\ITI Project\\FoodHub.csproj",
         "projectName": "FoodHub",
-        "projectPath": "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Medo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\obj\\",
+        "projectPath": "G:\\ITI Project\\FoodHub.csproj",
+        "packagesPath": "C:\\Users\\kokoe\\.nuget\\packages\\",
+        "outputPath": "G:\\ITI Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Medo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kokoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,8 +81,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -90,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
