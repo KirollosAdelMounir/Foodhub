@@ -16,7 +16,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 
     DbSet<FoodItem> FoodItem { get; set; }
     DbSet<Order> Order { get; set; }
-    DbSet<Order_FoodItem> Order_FoodItem { get; set; }
     DbSet<Restaurant> Restaurant { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
@@ -25,7 +24,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         // Customize the ASP.NET Identity model and override the defaults if needed.
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);
-        builder.Entity<Order_FoodItem>().HasKey(k => new { k.FoodItemId, k.OrderId });
         builder.ApplyConfiguration(new ApplicationUserEntityConfiguration());
     }
 }

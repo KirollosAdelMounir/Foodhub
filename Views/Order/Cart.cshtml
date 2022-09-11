@@ -1,0 +1,140 @@
+﻿@model IEnumerable<FoodHub.Models.Order>
+
+@{
+    float TotalPrice = 0f;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.fooditem.FoodItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fooditem.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="tablebody">
+        @foreach (var item in Model)
+        {
+            <tr id="@item.fooditemId">
+                <td>
+                    @Html.DisplayFor(modelItem => item.fooditem.FoodItemName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fooditem.Price)
+                </td>
+                <td id="quantity">
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-primary" onclick="additem(@item.fooditemId);">Add</button>
+                    <button type="submit" class="btn btn-danger" onclick="removeitem(@item.fooditemId);">Remove</button>
+                </td>
+            </tr>
+            TotalPrice += (item.fooditem.Price * item.Quantity);
+        }
+    </tbody>
+</table>
+
+<div id="payment">
+    <h2>Total Price :</h2>
+    <h3 class="text-info">@TotalPrice$</h3>
+    <a class="btn btn-success">Order</a>
+</div>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var str = '#tablebody';
+            var tags = $(str);
+            console.log(tags.length);
+        });
+
+        var ToatalPrice = 0;
+        function additem(itemId) {
+            var element = '#tablebody #' + itemId;
+
+            //$('#tablebody tr').remove();
+            //ToatalPrice=0;
+            
+            var formData = new FormData();
+            formData.append("id", itemId);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("AddItem")',
+                contentType: false,
+                processData: false,
+                cache: false,
+                data: formData,
+                dataType: "json",
+
+                success: function (data) {
+                    //console.log(data);
+                    if(data != null){
+                        element+= " #quantity";
+                        $(element).html(data.quantity);
+                        console.log(data);
+                        console.log(data.fooditem.price);
+
+                        $('#payment h3').html( parseFloat($('#payment h3').html()) + data.fooditem.price +"$");
+                    }
+
+                },
+                error: function (req, status, error) {
+                    console.log(error);
+                }
+            });
+        }
+        function removeitem(itemId) {
+            var element = '#tablebody #' + itemId;
+
+            var elementquantity = element + " #quantity";
+            let quantity = parseInt($(elementquantity).html());
+            if(quantity <= 1){
+                $(element).remove();
+            }
+
+            var formData = new FormData();
+            formData.append("id", itemId);
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("RemoveItem")',
+                contentType: false,
+                processData: false,
+                cache: false,
+                data: formData,
+                dataType: "json",
+                success: function (data) {
+                    //console.log(data);
+                    if (data != null) {
+
+                            $(elementquantity).html(data.quantity);
+
+                        $('#payment h3').html(parseFloat($('#payment h3').html()) - data.fooditem.price +"$");
+                    }
+
+                },
+                error: function (req, status, error) {
+                    console.log(error);
+                }
+            });
+        }
+
+    </script>
+}
+
+

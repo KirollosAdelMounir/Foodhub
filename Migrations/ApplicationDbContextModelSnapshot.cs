@@ -134,39 +134,29 @@ namespace FoodHub.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<int>("State")
                         .HasColumnType("int");
-
-                    b.Property<float>("TotalPrice")
-                        .HasColumnType("real");
 
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<long>("fooditemId")
+                        .HasColumnType("bigint");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
 
+                    b.HasIndex("fooditemId");
+
                     b.ToTable("Order");
-                });
-
-            modelBuilder.Entity("FoodHub.Models.Order_FoodItem", b =>
-                {
-                    b.Property<long>("FoodItemId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("OrderId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("FoodItemId", "OrderId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("Order_FoodItem");
                 });
 
             modelBuilder.Entity("FoodHub.Models.Restaurant", b =>
@@ -186,6 +176,7 @@ namespace FoodHub.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Rating")
+                        .HasMaxLength(5)
                         .HasColumnType("real");
 
                     b.Property<string>("RestaurantName")
@@ -343,32 +334,21 @@ namespace FoodHub.Migrations
 
             modelBuilder.Entity("FoodHub.Models.Order", b =>
                 {
-                    b.HasOne("FoodHub.Areas.Identity.Data.ApplicationUser", "User")
+                    b.HasOne("FoodHub.Areas.Identity.Data.ApplicationUser", "user")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("FoodHub.Models.Order_FoodItem", b =>
-                {
-                    b.HasOne("FoodHub.Models.FoodItem", "FoodItem")
+                    b.HasOne("FoodHub.Models.FoodItem", "fooditem")
                         .WithMany()
-                        .HasForeignKey("FoodItemId")
+                        .HasForeignKey("fooditemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("FoodHub.Models.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("fooditem");
 
-                    b.Navigation("FoodItem");
-
-                    b.Navigation("Order");
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -12,6 +12,8 @@ namespace FoodHub.Models
         public string FoodItemName { get; set; }
         [Required]
         public float Price { get; set; }
+
+        //------------------------------------------------
         public virtual Restaurant Restaurant { get; set; }
         [ForeignKey("Restaurant")]
         public long RestaurantId { get; set; }
