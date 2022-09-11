@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RKLMkY81hTTB+00Xkl3EgVkZKrfq/1XgSxCw+p8359o=",
+  "Hash": "4ZnSN672vS4F9A6gQJO3kPNwUa1gp6VcZADvWtSaxXk=",
   "Source": "FoodHub",
   "BasePath": "_content/FoodHub",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "G:\\ITI training\\ITI project\\wwwroot\\images\\FoodHub-Logo.jpg",
+      "SourceId": "FoodHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\ITI training\\ITI project\\wwwroot\\",
+      "BasePath": "_content/FoodHub",
+      "RelativePath": "images/FoodHub-Logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\FoodHub-Logo.jpg"
     },
     {
       "Identity": "G:\\ITI training\\ITI project\\wwwroot\\images\\hamburger-bro.png",
