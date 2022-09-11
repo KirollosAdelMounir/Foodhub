@@ -4,22 +4,8 @@
 @{
     ViewData["Title"] = "Log in";
 }
-<style>
-    body{
-        background-color : black;
-    }
-    h2{
-        color : white;
-    }
 
-    label{
-        color : white;
-    }
-    span{
-                text-decoration-color:revert;
 
-    }
-</style>
 <div class="row">
     <div class="col-md-4">
         <section>
@@ -29,12 +15,12 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-floating">
                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                    <label style="color : black" asp-for="Input.Email" class="form-label"></label>
+                    <label  asp-for="Input.Email" class="form-label"></label>
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
                 <div class="form-floating">
                     <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
-                    <label style="color : black" asp-for="Input.Password" class="form-label"></label>
+                    <label  asp-for="Input.Password" class="form-label"></label>
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
                 <div>

@@ -2,10 +2,23 @@
     --bg-orange: #FF9E00;
 }
 
+header {
+    background-color : white;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box !important;
+}
+h1, h2, h3, h4, h5, h6, p, td, th {
+    color: #ffa31a;
+}
+label {
+    color : darkorange;
+}
+.btn-outline-dark , li{
+    background-color :white;
 }
 
 html {
@@ -16,6 +29,7 @@ html {
 body {
     margin-bottom: 60px;
     font-family: 'Albert Sans', sans-serif;
+    background-color : black;
 }
 
 .form-floating, 
