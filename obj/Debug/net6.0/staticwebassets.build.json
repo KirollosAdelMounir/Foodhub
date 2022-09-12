@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ABXkhMsfe2pPFo5a86gcp+5xAojWUwHpN3yHzhmQjj4=",
+  "Hash": "CVBNIvpj8EWYiii2JMUEsBb4OMBJbkQljJEPCW1yw9I=",
   "Source": "FoodHub",
   "BasePath": "_content/FoodHub",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "G:\\ITI Project\\wwwroot\\images\\FoodHub-Icon.bmp",
+      "SourceId": "FoodHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\ITI Project\\wwwroot\\",
+      "BasePath": "_content/FoodHub",
+      "RelativePath": "images/FoodHub-Icon.bmp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\FoodHub-Icon.bmp"
     },
     {
       "Identity": "G:\\ITI Project\\wwwroot\\images\\FoodHub-Logo.jpg",
