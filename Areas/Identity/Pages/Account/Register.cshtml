@@ -55,14 +55,6 @@
                 <label asp-for="Input.Area"></label>
                 <span asp-validation-for="Input.Area" class="text-danger"></span>
             </div>
-            <div>
-                <div class="checkbox">
-                    <label style="color:white" asp-for="Input.IsAdmin" class="form-label">
-                        <input class="form-check-input" asp-for="Input.IsAdmin" />
-                        @Html.DisplayNameFor(m => m.Input.IsAdmin)
-                    </label>
-                </div>
-            </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-primary">Register</button>
         </form>
     </div>
