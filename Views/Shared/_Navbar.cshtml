@@ -22,9 +22,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Index">Menu</a>
                         </li>
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Cart">Orders</a>
-                        </li>
+                        </li>*@
                     </ul>
                 }
                 else if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
