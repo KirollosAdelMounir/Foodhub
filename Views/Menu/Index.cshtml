@@ -6,10 +6,31 @@
 }
 
 <h1 class="mb-3">@ViewData["Title"]</h1>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    const ViolateLogin = () => {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'You aren\'t signed in!',
+            confirmButtonText:
+                '<i class="fa fa-thumbs-up"></i> Sign in Now ',
+            footer: 'if you haven\'t an account  <a href="Identity/Account/Register"> Sign Up</a>'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "Identity/Account/login";
+            }
+        })
+    }
+
+</script>
 
 @if (TempData["SignInError"] != null)
 {
-    <div class="alert-danger">@TempData["SignInError"]</div>
+    <script>
+        ViolateLogin();
+    </script>
+    TempData["SignInError"] = null;
 }
 <div class="row">
     @foreach (var item in Model)
