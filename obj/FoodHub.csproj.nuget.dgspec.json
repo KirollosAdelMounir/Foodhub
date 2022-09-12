@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
         "packagesPath": "C:\\Users\\Ahmed Medo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\obj\\",
+=======
+    "D:\\_.NET\\FoodHub-Web-App\\FoodHub.csproj": {}
+  },
+  "projects": {
+    "D:\\_.NET\\FoodHub-Web-App\\FoodHub.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_.NET\\FoodHub-Web-App\\FoodHub.csproj",
+        "projectName": "FoodHub",
+        "projectPath": "D:\\_.NET\\FoodHub-Web-App\\FoodHub.csproj",
+        "packagesPath": "C:\\Users\\Nour\\.nuget\\packages\\",
+        "outputPath": "D:\\_.NET\\FoodHub-Web-App\\obj\\",
+>>>>>>> df16f0fe2e8b4867b6335fc6f5c6dc89ca7a7e79
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ahmed Medo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nour\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,8 +91,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -90,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
