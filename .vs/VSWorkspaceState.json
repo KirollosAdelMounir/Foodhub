@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Areas",
-    "\\Areas\\Identity",
-    "\\Areas\\Identity\\Pages",
-    "\\Areas\\Identity\\Pages\\Account"
+    ""
   ],
-  "SelectedNode": "\\FoodHub.csproj",
+  "SelectedNode": "\\FoodHub.sln",
   "PreviewInSolutionExplorer": false
 }

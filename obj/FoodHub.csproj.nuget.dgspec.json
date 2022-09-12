@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {}
+    "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {
+    "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
         "projectName": "FoodHub",
-        "projectPath": "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
+        "projectPath": "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\FoodHub.csproj",
         "packagesPath": "C:\\Users\\Ahmed Medo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmed Medo\\Source\\Repos\\nourbeh302\\FoodHub-Web-App\\obj\\",
+        "outputPath": "C:\\Users\\Ahmed Medo\\source\\repos\\nourbeh302\\FoodHub-Web-App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmed Medo\\AppData\\Roaming\\NuGet\\NuGet.Config",

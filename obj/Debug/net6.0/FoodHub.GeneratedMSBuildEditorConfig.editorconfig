@@ -8,11 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FoodHub
 build_property.RootNamespace = FoodHub
-build_property.ProjectDir = C:\Users\Ahmed Medo\Source\Repos\nourbeh302\FoodHub-Web-App\
+build_property.ProjectDir = C:\Users\Ahmed Medo\source\repos\nourbeh302\FoodHub-Web-App\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Ahmed Medo\Source\Repos\nourbeh302\FoodHub-Web-App
+build_property.MSBuildProjectDirectory = C:\Users\Ahmed Medo\source\repos\nourbeh302\FoodHub-Web-App
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Ahmed Medo/Source/Repos/nourbeh302/FoodHub-Web-App/Areas/Identity/Pages/Account/AccessDenied.cshtml]
