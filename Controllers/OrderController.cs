@@ -43,14 +43,17 @@ namespace FoodHub.Controllers
         {
             ApplicationUser user = null;
             Order order1;
-
-            if (_signInManager.IsSignedIn(User))
+            if (User.IsInRole("Admin")) {
+                TempData["SignInError"] = "The Admin can not Trade, You have to login in as a User";
+                return RedirectToAction("Index", "Menu");
+            }
+            else if (_signInManager.IsSignedIn(User))
             {
                 user = _userManager.GetUserAsync(User).Result;
             }
             else
             {
-                TempData["SignInError"] = "Sign in First";
+                TempData["SignInError"] = "You are not signed in!";
                 return RedirectToAction("Index", "Menu");
             }
             if ((order1 = _order_repository.List().SingleOrDefault(ord => ord.fooditemId == id && ord.UserId == user.Id && ord.State == State.Pending)) != null)
