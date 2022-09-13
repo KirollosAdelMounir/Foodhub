@@ -20,7 +20,7 @@
 <h2>@ViewData["Title"]</h2>
 
 <div class="row w-100 mt-3 mx-0">
-    <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="Orders" asp-action="Index">
+    <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="Order" asp-action="ViewAllOrders">
         <h3>Orders (@Model.orders.Count())</h3>
     </a>
 
@@ -30,5 +30,8 @@
 
     <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="FoodItem" asp-action="Index">
         <h3>Food Items (@Model.foodItems.Count())</h3>
+    </a>
+    <a class="card border-2 col col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded-3 btn-link" asp-controller="" asp-action="">
+        <h3>Users (@Model.applicationUsers.Count())</h3>
     </a>
 </div>

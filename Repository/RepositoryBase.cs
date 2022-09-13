@@ -56,5 +56,10 @@ namespace FoodHub.Repository
             _entity.Remove(entity);
             _context.SaveChanges();
         }
+
+        public object List(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

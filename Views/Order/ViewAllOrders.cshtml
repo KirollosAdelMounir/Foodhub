@@ -1,0 +1,60 @@
+﻿ @model IEnumerable<FoodHub.Models.Order>
+
+@{
+    ViewData["Title"] = "ViewAllOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string orderState = ""; 
+}
+
+<h1>AllOrders</h1>
+
+<table class="table table-hover">
+    <thead class="bg-white badg">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.user)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fooditem)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+                @{if (item.State == State.Pending){
+                    orderState = "badge bg-warning";
+                }else if (item.State == State.Delivered) {
+                orderState ="badge bg-success";
+                }else if(item.State == State.Cancelled){
+                orderState ="badge bg-danger";
+                }}
+            <td>
+                 <span class ="@orderState">@Html.DisplayFor(modelItem => item.State)</span>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @item.user.FirstName@item.user.LastName
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fooditem.FoodItemName)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

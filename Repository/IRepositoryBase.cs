@@ -10,5 +10,6 @@ namespace FoodHub.Repository
         void Create(T entity);
         void Update(T entity);
         void Delete(T entity);
+        object List(Func<object, bool> value);
     }
 }
