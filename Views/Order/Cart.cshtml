@@ -2,7 +2,7 @@
 
 @{
     float TotalPrice = 0f;
-
+    string enablebutton = " ";
 }
 
 <style>
@@ -39,7 +39,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.fooditem.FoodItemName)
                 </td>
-                <td>
+                <td id="price">
                     @Html.DisplayFor(modelItem => item.fooditem.Price)
                 </td>
                 <td id="quantity">
@@ -61,11 +61,13 @@
 <div id="payment">
     <h2>Total Price :</h2>
     <h3 class="text-info">@TotalPrice$</h3>
-    @if(Model != null){
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="@Model.userid" onclick="getallorders(event);">
-            Order
-        </button>
+    @if(Model.orders.Count() <= 0){
+        enablebutton = "pointer-events:none; background:#989898; border-color:#989898;";
     }
+    <a class="btn btn-success" id="@Model.userid" style="@enablebutton" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getallorders(event);">
+        Order
+    </a>
+    
     
 </div>
 
@@ -146,8 +148,15 @@
 
             var elementquantity = element + " #quantity";
             let quantity = parseInt($(elementquantity).html());
+
+            var price = $(element +" #price").html();
+            $('#payment h3').html(parseFloat($('#payment h3').html()) - parseInt(price) + "$");
+
             if(quantity <= 1){
                 $(element).remove();
+                if ($('#tablebody tr').length == 0){
+                    $('#payment a').css({"pointer-events":"none", "background":"#989898", "border-color":"#989898"});
+                }
             }
 
             var formData = new FormData();
@@ -161,11 +170,8 @@
                 data: formData,
                 dataType: "json",
                 success: function (data) {
-                    //console.log(data);
                     if (data != null) {
                         $(elementquantity).html(data.quantity);
-
-                        $('#payment h3').html(parseFloat($('#payment h3').html()) - data.fooditem.price +"$");
                     }
                 },
                 error: function (req, status, error) {
@@ -174,7 +180,6 @@
             });
         }
         function getallorders(event){
-            //console.log(event.target.id);
             let userid = event.target.id;
             var element = '#receiptdata';
             $(element + " tr").remove();
@@ -236,7 +241,6 @@
                 data: formData,
                 dataType: "json",
                 success: function (data) {
-                    console.log("Success");
                 },
                 error: function (req, status, error) {
                     console.log(error);

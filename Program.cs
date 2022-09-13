@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FoodHub.Areas.Identity.Data;
 using FoodHub.Repository;
+using static FoodHub.AutoMapperExtention;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
@@ -13,6 +14,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.S
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultUI()
     .AddDefaultTokenProviders(); // For 2FA
+// mapper dependency injection 
+builder.Services.AddAutoMapper(map => map.AddProfile(new AutoMapperProfile()));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -89,17 +89,18 @@ namespace FoodHub.Controllers
         {
             var user = _userManager.GetUserAsync(User).Result;
             var order = _order_repository.List().SingleOrDefault(ord => ord.Id == id);
+            var orderdetails = _order_repository.Find(ord => ord.Id == order.Id, false, ord => ord.fooditem).ToList()[0];
+            orderdetails.Quantity--;
             order.Quantity--;
             if (order.Quantity == 0)
             {
                 _order_repository.Delete(order);
+                return Json(orderdetails);
             }
-            else {
-                _order_repository.Update(order);
-                order = _order_repository.Find(ord => ord.Id == order.Id, false, ord => ord.fooditem).ToList()[0];
-            }
+            _order_repository.Update(order);
+            
             //var validorders = _order_repository.Find(order => order.Quantity > 0, false, order => order.fooditem, order => order.user).ToList();
-            return Json(order);
+            return Json(orderdetails);
         }
         [HttpPost]
         public JsonResult ReturnAllRelatedOrders(string id) {
