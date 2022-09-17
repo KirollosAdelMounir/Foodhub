@@ -5,22 +5,28 @@
     ViewData["Title"] = "Log in";
 }
 
+<style>
+    img {
+        max-width: 500px;
+    }
+</style>
 
-<div class="row">
+<div class="row flex-column-reverse flex-md-row">
     <div class="col-md-4">
         <section>
             <form id="account" method="post">
-                <h2>Login To eat</h2>
+                <h2>Login to the system</h2>
+                <p class="text-dark lh-1">Sign in to explore various meals and restaurants with lots of categories</p>
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-floating">
                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                    <label  asp-for="Input.Email" class="form-label"></label>
+                    <label asp-for="Input.Email" class="form-label"></label>
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
                 <div class="form-floating">
                     <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
-                    <label  asp-for="Input.Password" class="form-label"></label>
+                    <label asp-for="Input.Password" class="form-label"></label>
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
                 <div>
@@ -40,7 +46,7 @@
                     </div>
                 </div>
                 <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-primary">Log in</button>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-primary mt-3">Log in</button>
                 </div>
                 <div>
                     <p class="mt-2">
@@ -56,8 +62,9 @@
             </form>
         </section>
     </div>
+    <div class="col-md-2"></div>
     <div class="col-md-6 col-md-offset-2">
-        <img src="~/images/FoodHub-Logo.jpg" height="620" width="980" />
+        <img class="overflow-hidden rounded-3" src="~/images/Order food-bro.png" width="100%" style="object-fit: cover" />
     </div>
 </div>
 

@@ -21,7 +21,7 @@ namespace FoodHub.Controllers
         [HttpGet]
         public ActionResult GetAllUsers()
         {
-            List<ApplicationUser> users = _userRepository.List().ToList();
+            List<ApplicationUser> users = _userRepository.List().Where(x => !x.Email.Contains("admin")).ToList();
             List<UserTable> usersTable = _mapper.Map<List<UserTable>>(users);
             return View(usersTable);
         }

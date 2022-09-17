@@ -2223,3 +2223,5 @@ C:\Users\Ahmed Medo\source\repos\nourbeh302\FoodHub-Web-App\obj\Debug\net6.0\Foo
 C:\Users\Ahmed Medo\source\repos\nourbeh302\FoodHub-Web-App\obj\Debug\net6.0\ref\FoodHub.dll
 C:\Users\Ahmed Medo\source\repos\nourbeh302\FoodHub-Web-App\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Ahmed Medo\source\repos\nourbeh302\FoodHub-Web-App\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\_.NET\FoodHub-Web-App\bin\Debug\net6.0\AutoMapper.dll
+D:\_.NET\FoodHub-Web-App\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

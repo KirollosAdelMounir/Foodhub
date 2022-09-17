@@ -1,5 +1,5 @@
 :root {
-    --bg-orange: #FF9E00;
+    --bg-orange: #FE8528;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     box-sizing: border-box !important;
 }
 h1, h2, h3, h4, h5, h6, p, td, th {
-    color: #ffa31a;
+    color: var(--bg-orange);
 }
 dt ,dd{
     color:#fff;
@@ -32,7 +32,6 @@ html {
 body {
     margin-bottom: 60px;
     font-family: 'Albert Sans', sans-serif;
-    background-color : black;
 }
 
 .form-floating, 
@@ -59,7 +58,7 @@ body {
 .btn-primary:focus,
 .btn-link,
 .btn-link:hover {
-    --bg-orange: #DB8800;
+    --bg-orange: #DD6B13;
 }
 
     .btn-link,
