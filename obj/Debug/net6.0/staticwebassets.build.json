@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BWmvHxiCgqCzxBSRJX/16zQ0nPOBGc4wrexfBfafsP4=",
+  "Hash": "AAwj5fC8O5ukstHTYAAqwiIt0ahnE4O+K+7vfmarXPA=",
   "Source": "FoodHub",
   "BasePath": "_content/FoodHub",
   "Mode": "Default",
@@ -1154,6 +1154,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\hamburger-bro.png"
+    },
+    {
+      "Identity": "D:\\_.NET\\FoodHub-Web-App\\wwwroot\\images\\logo.png",
+      "SourceId": "FoodHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_.NET\\FoodHub-Web-App\\wwwroot\\",
+      "BasePath": "_content/FoodHub",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "D:\\_.NET\\FoodHub-Web-App\\wwwroot\\images\\Order food-bro.png",
+      "SourceId": "FoodHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_.NET\\FoodHub-Web-App\\wwwroot\\",
+      "BasePath": "_content/FoodHub",
+      "RelativePath": "images/Order food-bro.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Order food-bro.png"
     },
     {
       "Identity": "D:\\_.NET\\FoodHub-Web-App\\wwwroot\\js\\site.js",

@@ -5,63 +5,55 @@
 }
 
 <style>
-    body{
-        background-color : black;
-    }
-    h2{
-        color : white;
-    }
-    label{
-        text-decoration-color:revert;
-    }
-    span{
-                text-decoration-color:revert;
-
+    img {
+        max-width: 500px;
     }
 </style>
+
 <div class="row">
     <div class="col-md-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h2>Create a new account.</h2>
+            <p class="text-dark lh-1">Be one of us by create a new account. This will help us give you new meals and feedbacks.</p>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-floating">
                 <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.FirstName"></label>
+                <label class="text-dark" asp-for="Input.FirstName"></label>
                 <span asp-validation-for="Input.FirstName" class="text-danger"></span>
             </div>
             <div class="form-floating">
                 <input asp-for="Input.LastName" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.LastName"></label>
+                <label class="text-dark" asp-for="Input.LastName"></label>
                 <span asp-validation-for="Input.LastName" class="text-danger"></span>
             </div>
             <div class="form-floating">
                 <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.Email"></label>
+                <label class="text-dark" asp-for="Input.Email"></label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-floating">
                 <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Password"></label>
+                <label class="text-dark" asp-for="Input.Password"></label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="form-floating">
                 <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.ConfirmPassword"></label>
+                <label class="text-dark" asp-for="Input.ConfirmPassword"></label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-floating">
                 <input asp-for="Input.Area" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Area"></label>
+                <label class="text-dark" asp-for="Input.Area"></label>
                 <span asp-validation-for="Input.Area" class="text-danger"></span>
             </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-primary">Register</button>
+            <span>Already have account?&nbsp;<a class="btn-link" asp-page="Login">Login</a></span>
         </form>
     </div>
+    <div class="col-md-2"></div>
     <div class="col-md-6 col-md-offset-2">
-        <div class="col-md-6 col-md-offset-2">
-            <img src="~/images/FoodHub-Logo.jpg" height="620" width="980" />
-    </div>
+        <img class="overflow-hidden rounded-3" src="~/images/sign-in-bro.png" width="100%" style="object-fit: cover" />
     </div>
 </div>
 
