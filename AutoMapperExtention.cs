@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using FoodHub.Areas.Identity.Data;
-using FoodHub.ViewModels;
+using Eatable.Areas.Identity.Data;
+using Eatable.ViewModels;
 
-namespace FoodHub
+namespace Eatable
 {
     public static class AutoMapperExtention
     {

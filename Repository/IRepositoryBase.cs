@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace FoodHub.Repository
+namespace Eatable.Repository
 {
     public interface IRepositoryBase<T, K> where T : class
     {

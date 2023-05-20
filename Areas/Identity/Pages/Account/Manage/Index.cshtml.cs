@@ -6,12 +6,12 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using FoodHub.Areas.Identity.Data;
+using Eatable.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FoodHub.Areas.Identity.Pages.Account.Manage
+namespace Eatable.Areas.Identity.Pages.Account.Manage
 {
     public class IndexModel : PageModel
     {

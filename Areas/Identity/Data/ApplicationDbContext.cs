@@ -1,11 +1,11 @@
-﻿using FoodHub.Areas.Identity.Data;
-using FoodHub.Models;
+﻿using Eatable.Areas.Identity.Data;
+using Eatable.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FoodHub.Areas.Identity.Data;
+namespace Eatable.Areas.Identity.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {

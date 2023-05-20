@@ -1,10 +1,10 @@
-﻿using FoodHub.Repository;
-using FoodHub.Models;
+﻿using Eatable.Repository;
+using Eatable.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using FoodHub.ViewModels;
+using Eatable.ViewModels;
 
-namespace FoodHub.Controllers
+namespace Eatable.Controllers
 {
     public class FoodItemController : Controller
     {

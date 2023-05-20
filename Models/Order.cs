@@ -1,8 +1,8 @@
-﻿using FoodHub.Areas.Identity.Data;
+﻿using Eatable.Areas.Identity.Data;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace FoodHub.Models
+namespace Eatable.Models
 {
     public class Order
     {

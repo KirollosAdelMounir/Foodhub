@@ -1,10 +1,10 @@
-﻿using FoodHub.Areas.Identity.Data;
-using FoodHub.Models;
-using FoodHub.Repository;
+﻿using Eatable.Areas.Identity.Data;
+using Eatable.Models;
+using Eatable.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FoodHub.Controllers
+namespace Eatable.Controllers
 {
     public class MenuController : Controller
     {

@@ -1,7 +1,7 @@
-﻿using FoodHub.Areas.Identity.Data;
-using FoodHub.Models;
+﻿using Eatable.Areas.Identity.Data;
+using Eatable.Models;
 
-namespace FoodHub.ViewModels
+namespace Eatable.ViewModels
 {
     public class DashboardViewModel
     {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace FoodHub.Migrations
+namespace Eatable.Migrations
 {
     public partial class AddApplicationRelations : Migration
     {

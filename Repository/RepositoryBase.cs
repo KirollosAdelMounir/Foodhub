@@ -1,8 +1,8 @@
-﻿using FoodHub.Areas.Identity.Data;
+﻿using Eatable.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace FoodHub.Repository
+namespace Eatable.Repository
 {
     public class RepositoryBase<T, K> : IRepositoryBase<T, K> where T : class
     {

@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using FoodHub.Areas.Identity.Data;
-using FoodHub.Repository;
-using FoodHub.ViewModels;
+using Eatable.Areas.Identity.Data;
+using Eatable.Repository;
+using Eatable.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FoodHub.Controllers
+namespace Eatable.Controllers
 {
     public class UserController : Controller
     {

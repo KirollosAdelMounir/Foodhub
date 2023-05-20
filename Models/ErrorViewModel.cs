@@ -1,4 +1,4 @@
-namespace FoodHub.Models;
+namespace Eatable.Models;
 
 public class ErrorViewModel
 {

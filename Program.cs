@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using FoodHub.Areas.Identity.Data;
-using FoodHub.Repository;
-using static FoodHub.AutoMapperExtention;
+using Eatable.Areas.Identity.Data;
+using Eatable.Repository;
+using static Eatable.AutoMapperExtention;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");

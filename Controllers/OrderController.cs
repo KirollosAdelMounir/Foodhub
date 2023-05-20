@@ -1,13 +1,13 @@
-﻿using FoodHub.Areas.Identity.Data;
-using FoodHub.Models;
-using FoodHub.Repository;
-using FoodHub.ViewModels;
+﻿using Eatable.Areas.Identity.Data;
+using Eatable.Models;
+using Eatable.Repository;
+using Eatable.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 
-namespace FoodHub.Controllers
+namespace Eatable.Controllers
 {
     public class OrderController : Controller
     {

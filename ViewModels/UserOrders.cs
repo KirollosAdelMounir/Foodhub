@@ -1,6 +1,6 @@
-﻿using FoodHub.Models;
+﻿using Eatable.Models;
 
-namespace FoodHub.ViewModels
+namespace Eatable.ViewModels
 {
     public class UserOrders
     {

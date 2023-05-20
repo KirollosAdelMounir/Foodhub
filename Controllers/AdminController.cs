@@ -1,11 +1,11 @@
-﻿using FoodHub.Repository;
-using FoodHub.Models;
-using FoodHub.ViewModels;
+﻿using Eatable.Repository;
+using Eatable.Models;
+using Eatable.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using FoodHub.Areas.Identity.Data;
+using Eatable.Areas.Identity.Data;
 
-namespace FoodHub.Controllers
+namespace Eatable.Controllers
 {
     public class AdminController : Controller
     {

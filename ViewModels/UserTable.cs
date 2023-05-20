@@ -1,4 +1,4 @@
-﻿namespace FoodHub.ViewModels
+﻿namespace Eatable.ViewModels
 {
     public class UserTable
     {
